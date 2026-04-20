@@ -114,3 +114,15 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+/* Table Styles */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { padding: 12px; border: 1px solid var(--secondary); text-align: left; }
+th { background-color: var(--primary); color: var(--background); }
+
+/* Form Styles */
+form { display: flex; flex-direction: column; max-width: 500px; margin-top: 20px; }
+label { margin-top: 10px; font-weight: bold; }
+input, textarea { padding: 10px; margin-top: 5px; border: 1px solid var(--secondary); border-radius: 4px; font-family: inherit; font-size: 16px; }
+textarea { resize: vertical; min-height: 120px; }
+button { margin-top: 15px; padding: 10px 20px; background-color: var(--accent); color: #fff; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 16px; }
+button:hover { background-color: var(--primary); }
