@@ -126,3 +126,35 @@ input, textarea { padding: 10px; margin-top: 5px; border: 1px solid var(--second
 textarea { resize: vertical; min-height: 120px; }
 button { margin-top: 15px; padding: 10px 20px; background-color: var(--accent); color: #fff; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 16px; }
 button:hover { background-color: var(--primary); }
+/* Full-Width Gallery Styles */
+.gallery-wrapper {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-wrapper h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+.gallery-grid { 
+    display: grid; 
+    /* Changed minmax from 200px to 350px to make images much bigger */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 25px; 
+}
+
+.gallery-grid img { 
+    width: 100%; 
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 12px; 
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
